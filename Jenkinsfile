@@ -12,7 +12,7 @@ pipeline{
       steps{
         sh 'mvn compile'
         sh 'mvn clean package'
-        sh 'mv target/*.war target/time-tracker-web-0.5.0-SNAPSHOT.war'
+        sh 'mv webapps/*.war webapps/time-tracker-web-0.5.0-SNAPSHOT.war'
        }
     }
     stage('deploy'){
